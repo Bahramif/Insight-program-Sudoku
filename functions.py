@@ -86,9 +86,8 @@ def eliminate(values, s, d):
     return values
 
 
-
+"Using depth-first search and propagation, try all possible values."
 def search(values):
-    "Using depth-first search and propagation, try all possible values."
     if values is False:
         return False ## Failed earlier
     if all(len(values[s]) == 1 for s in squares):
